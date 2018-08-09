@@ -1,0 +1,205 @@
+$primary-gradient: linear-gradient( to right, rgb(90,228,132) 0%, rgb(76,222,190) 100%);
+$secondary-gradient: linear-gradient( to right, rgb(104,97,249) 0%, rgb(104,36,205) 100%);
+
+$blue-gradient: linear-gradient( 22deg, rgb(41,172,255) 0%, rgb(22,137,244) 100%);
+
+$first-font: 'Roboto', 'Arial', sans-serif;
+$second-font: 'Nunito','Arial', sans-serif;
+
+
+
+$base-color: #37354a;
+$base-grey: #f9fafc;
+//breakpoints
+$s-viewport: 480px;
+$m-viewport: 768px;
+$l-viewport: 992px;
+$xl-viewport: 1200px;
+
+html {
+	font-size: 12px;
+}
+
+body {
+	font-family: $first-font;
+	color: $base-color;
+	background-color: $base-grey;
+}
+
+label {
+	font-weight: 500;
+}
+
+.base-color {
+	color: $base-color;
+}
+
+.primary-color {
+	color: $green;
+}
+
+.secondary-color {
+	color: $indigo;
+}
+
+.display-none {
+	display: none;
+}
+
+@media(min-width: $s-viewport){
+	html{
+		font-size: 16px;
+	}
+}
+
+//form
+
+.row--bottom{
+	align-items: flex-end;
+}
+
+.form-group {
+	margin-bottom: 2rem;
+}
+
+.form-control {
+	border: 1px solid #eeeef4;
+	background-color: #fbfcfe;
+	padding: 0 1em;
+	height: 3.25rem;
+}
+
+.form-control::placeholder {
+	color: #c8c8cf;
+}
+
+.btn-primary {
+	background-image: $primary-gradient; 
+	color: $white;
+	text-transform: uppercase;
+}
+
+.btn--square {
+	width: 2.625rem;
+	height: 2.625rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+
+	background-color: #fff;
+	color: #7b66e7;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+	font-size: 1em;
+}
+
+.fa, .fas, .far, .fal, .fab,
+.fooicon, 
+.order-desc::before,
+.order-asc::before,
+.icon::before{
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: "Font Awesome 5 Pro";
+    line-height: 1;
+    // vertical-align: -15%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+// .icon::before {
+// 	display: inline-block;
+// 	font-style: normal;
+// 	font-variant: normal;
+// 	text-rendering: auto;
+// 	font-family: "Font Awesome 5 Free";
+// 	font-weight: normal;
+// }
+
+.icon--left::before{
+	margin-right: .5rem;
+}
+
+.icon--calendar::before {
+	content: "\f133";
+}
+
+.icon--arrow::before {
+	content: "\f35a";
+}
+
+.label__star {
+	color: #2dacfe;
+	margin-left: 4px;
+}
+
+.radio-switch {
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	height: 3.25rem;
+	background-color: #eefcf2;
+	display: flex;
+}
+
+.radio-switch div{
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+
+.radio-switch input {
+	position: absolute;
+	left: -9999px;
+}
+
+.radio-switch__label {
+	display: flex;
+	text-transform: uppercase;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: .5rem 0;
+	border-radius: .125rem;
+	// background-color: #eefcf2;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+}
+
+.radio-switch input:checked + label {
+	color: $white;
+	background-image: $primary-gradient;
+}
+
+.radio-switch--secondary {
+	background-color: #edeafc;
+}
+
+.radio-switch--secondary input:checked + label {
+	background-image: $secondary-gradient;
+}
+
+.btn-under-input,
+.container-datepicker {
+	position: relative;
+}
+
+.btn-under-input__btn,
+.container-datepicker .btn {// конструкция – костыль, пока сойдёт
+	position: absolute;
+	bottom: .3rem;
+	right: $grid-gutter-width/2;
+	margin-bottom: 0;
+	margin-right: .3rem;
+}
+
+.btn-under-input__btn {
+	right: 0;
+}

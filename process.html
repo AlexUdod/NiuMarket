@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>Process</title>
+  </head>
+  <body>
+  <header class="site-header">
+    <a class="admin-page__header-logo" href="#"><span>Niu</span> Market</a>
+    <label for="menuToggle" class="toogler-btn">
+      <i class="fas fa-align-justify fa-align-justify--customstyle"></i>Menu
+    </label>
+    <input id="menuToggle" type="checkbox">      
+    <nav class="header-nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+      <a href="#" class="nav-link ">
+        <i class="fas fa-wallet fa-wallet--header "></i>Wallet
+      </a>
+      </li>
+      <li class="nav-item">
+      <a href="#" class="nav-link ">
+        <i class="fas fa-exchange-alt fa-exchange-alt--header"></i>Buy/Sell
+      </a>
+      </li>
+      <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="fas fa-history fa-history--header"></i>History
+      </a>
+      </li>
+    </ul>
+    <div class="nav__username-container">
+      <p class="nav__username">Hello, Some Name</p>
+    </div>
+    </nav>
+  </header>
+  
+  <div class="block-card--spacer">
+    <header class="page-header">
+      <h1 class="page-header__title">ETH/DTH</h1>
+    </header>
+  
+    <form class="block-card block-card--before-caption" action="">
+      <div class="block-card--spacer">
+        <div class="row">
+          <div class="col-12 form-group">             
+            <div class="radio-switch">
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sellbuy"  id="RadioMale" value="RadioMale" checked>
+                <label for="RadioMale" class="radio-switch__label">Buy</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" name="sellbuy"  id="RadioFemale" value="RadioFemale">
+                <label for="RadioFemale" class=" radio-switch__label">Sell</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 form-group">
+            <label for="spendcurrency" class="currency-changes">
+              <span class="">You will spend ETH</span>
+              <span class="currency-changes__description">You have  
+                <span class="currency-changes__personal-ammount">0.0</span>
+                ETH
+              </span>
+            </label>
+            <div class="input-group input-group--progress" id="spinner">
+              <button type="button" class="btn btn--square ammount-btn ammount-btn--decrease">MIN
+              </button>
+              <button type="button" class=" btn ammount-arrow ammount-arrow--decrease" data-action="decrement">
+                <i class="far fa-caret-left"></i>
+              </button>                
+              <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" >
+              <button type="button" class="btn ammount-arrow ammount-arrow--increase" data-action="increment">
+                <i class="far fa-caret-right"></i>
+              </button> 
+              <button type="button" class="btn btn--square ammount-btn ammount-btn--increase">MAX
+              </button>
+            </div>
+          </div>
+          <div class="col-12 form-group">
+            <label for="getcurrency" class="currency-changes">
+              <span class="">You will get ETH</span>
+            </label>          
+            <div class="input-group input-group--progress" id="spinner">
+              <button type="button" class="btn btn--square ammount-btn ammount-btn--decrease">MIN
+              </button>
+              <button type="button" class="btn ammount-arrow ammount-arrow--decrease" data-action="decrement">
+                <i class="far fa-caret-left"></i>
+              </button>                
+              <input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+              <button type="button" class="btn ammount-arrow ammount-arrow--increase" data-action="increment">
+                <i class="far fa-caret-right"></i>
+              </button> 
+              <button type="button" class="btn btn--square ammount-btn ammount-btn--increase">MAX
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    </div>
+    
+
+  <!-- shit –– start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style/footable.standalone.css" />
+    
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/footable.js"></script>
+
+  <!-- скрипт для inputspinner -->
+
+    <script src="js/bootstrap-input-spinner.js"></script>
+    
+    <script src="js/my.js"></script>
+    <!-- shit –– end -->
+  </body>
+</html>

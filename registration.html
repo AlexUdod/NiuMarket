@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600|Roboto:400,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="style/main.css">
+		<title>NiuMarket-Registration</title>
+	</head>
+	<body class="user-data-page">	
+	<div class="user-data-page__wrap">	
+		<div class="user-data-page__section">
+			<div class="user-data-page__header">
+					<h1 class="user-data-page__logo col-md-6"><span>Niu</span> Market</h1>        
+					<h2 class="user-data-page__caption col-md-6">Registration Flow</h2>
+			</div>
+		</div>
+		<form class="user-data-page__section block-card block-card--before-caption" action="">
+			<div class="block-card--spacer">
+				<div class="row">
+					
+					<div class="col-md-6">
+						<div class="row">              
+							<div class="col-sm-12 form-group">
+								<label for="InputEmail">Email
+									<span class="label__star">*</span>
+								</label>               
+								<input type="email" class="form-control" id="InputEmail" placeholder="Enter Email" aria-describedby="emailHelp" required>
+							</div>
+							
+							<div class="col-sm-12 form-group">
+								<label for="InputName">Name
+									<span class="label__star">*</span>
+								</label>
+								<input type="text" class="form-control" id="InputName" placeholder="Your Name" aria-describedby="NameHelp" required>
+							</div>
+
+
+							<div class="col-sm-12 form-group">
+								<label for="" >Gender</label>
+							
+								<div class="radio-switch">
+									<div class="form-check form-check-inline">
+										<input type="radio" name="gender"  id="RadioMale" value="RadioMale" checked>
+										<label for="RadioMale" class="radio-switch__label">Male</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input type="radio" name="gender"  id="RadioFemale" value="RadioFemale">
+										<label for="RadioFemale" class=" radio-switch__label">Female</label>
+									</div>
+								</div>
+							</div>
+
+
+							
+							<div class="col-sm-12 form-group">
+								<label for="InputPassport">Passport Number 
+									<span class="label__star">*</span>
+								</label>
+								<input type="text" class="form-control" id="InputPassport" placeholder="Passport Number" aria-describedby="PassportHelp" required>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-sm-12  form-group container-datepicker" >
+								<label for="datepicker">Date of Birth
+									<span class="label__star">*</span>
+								</label>
+								<label class="far fa-calendar btn btn--square" for="datepicker"></label>
+								<input type="text"  class="form-control" id="datepicker" placeholder="01/01/1993" required>	               
+							</div>
+
+							<div class="col-sm-12 form-group ">
+								<label for="InputCountry">Country
+									<span class="label__star">*</span>
+								</label>
+								<select class="form-control selectpicker" id="InputCountry" required>
+									<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Ukraine</span>" value="Ukraine">Ukraine</option>
+									<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Russia</span>" value="Russia">Russia</option>
+									<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Poland</span>" value="Poland">Poland</option>
+								</select>
+							</div>
+
+							<div class="col-sm-12 form-group">
+								<label for="InputAdress">Adress Line</label>
+								<input type="text" class="form-control" id="InputAdress" placeholder="Adress Line" aria-describedby="AdressHelp" required>
+							</div>
+
+							<!-- MOBILE AREA -->
+
+							<div class="col-sm-12 form-group">  
+								<label for="InputMobile">Mobile Number
+									<span class="label__star">*</span>
+								</label>
+								
+								<div class="registration__mobile-container--flex">
+									<select class="form-control selectpicker regisreation__mobile-code">
+										<option value="+380">+380</option>
+										<option value="+480">+480</option>
+										<option value="+580">+580</option>
+									</select>             
+									<input type="tel" class="form-control" id="InputMobile" placeholder="XXX XXX XX" required>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="block-card__footer">
+					<button class=" btn btn-primary block-card__footer-btn">Register Now
+						<i class="far fa-arrow-alt-circle-right icon--right"></i>
+				</button>
+				</div>
+		</form>
+	</div>	
+		
+		
+		<!-- shit –– start -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+
+		<script src="js/my.js"></script>
+		<!-- shit –– end -->
+	</body>
+</html>

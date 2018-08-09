@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600|Roboto:400,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="style/main.css">
+		<title>Members</title>
+	</head>
+	<body class="admin-page">
+	
+	<div class="block-card--spacer-vert container">
+		<header class="page-header">
+			<h1 class="page-header__title">Members</h1>
+		</header>
+		<table class="table-js">
+			<thead>
+				<tr>
+					<th class="order-desc">ID</th>
+					<th>Name</th>
+					<th data-breakpoints="xs sm">Language</th>
+					<th data-breakpoints="xs sm">Email</th>
+					<th data-breakpoints="xs sm">2FA</th>
+					<th data-breakpoints="xs sm">Status</th>
+					<th></th>
+					<th data-breakpoints="all"></th>
+					<th data-breakpoints="all"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tr-active">
+					<td>123456</td>
+					<td>Some Name</td>
+					<td><span class="country"><img src="img/pl.svg" alt="PL" width="24" height="24" />PL</span></td>
+					<td>email@gmail.com</td>
+					<td><span class="badge badge-secondary">eneble</span></td>
+					<td><span class="badge badge-primary">eneble</span></td>
+					<td class="text-right"><span class="btn footable-toggle fa fa-pencil"></span></td>
+					<td colspan="2">
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Name</label>
+										<input type="text" class="form-control" id="InputName" placeholder="Your Name" aria-describedby="NameHelp">
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Password</label>
+										<input type="pass" class="form-control" id="InputName" placeholder="*****" aria-describedby="NameHelp">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputEmail">Email</label>               
+										<input type="email" class="form-control" id="InputEmail" placeholder="Enter Email" aria-describedby="emailHelp" required>
+									</div>
+									
+									<div class="col-sm-12 form-group ">
+										<label for="InputCountry">Country</label>
+										<select class="form-control selectpicker" id="InputCountry" required>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Ukraine</span>" value="Ukraine">Ukraine</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Russia</span>" value="Russia">Russia</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Poland</span>" value="Poland">Poland</option>
+										</select>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="" >F2A</label>
+									
+										<div class="radio-switch radio-switch--secondary">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="" >Status</label>
+									
+										<div class="radio-switch">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="row">
+							<h3 class="footable-title col-sm-12">Withdrawal Limits</h3>
+							<div class="col-lg-6 form-group">
+								<div class="row">
+									<div class="col col-sm-5 lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 form-group">
+								<div class="row">
+									<div class="col col-sm-5 lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+									<div class="col col-sm-7">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 form-group">
+								<div class="row">
+									<div class="col col col-sm-5 lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="tr-active">
+					<td>123456</td>
+					<td>Some Name</td>
+					<td><span class="country"><img src="img/ua.svg" alt="UA" width="24" height="24" />UA</span></td>
+					<td>email@gmail.com</td>
+					<td><span class="badge badge-secondary">eneble</span></td>
+					<td><span class="badge badge-primary">eneble</span></td>
+					<td class="text-right"><button class="btn btn--secondary" type="button"><i class="far fa-pencil icon--left"></i>edit</button></td>
+					<td colspan="2">
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Name</label>
+										<input type="text" class="form-control" id="InputName" placeholder="Your Name" aria-describedby="NameHelp">
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Password</label>
+										<input type="pass" class="form-control" id="InputName" placeholder="*****" aria-describedby="NameHelp">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputEmail">Email</label>               
+										<input type="email" class="form-control" id="InputEmail" placeholder="Enter Email" aria-describedby="emailHelp" required>
+									</div>
+									
+									<div class="col-sm-12 form-group ">
+										<label for="InputCountry">Country</label>
+										<select class="form-control selectpicker" id="InputCountry" required>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Ukraine</span>" value="Ukraine">Ukraine</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Russia</span>" value="Russia">Russia</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Poland</span>" value="Poland">Poland</option>
+										</select>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="" >F2A</label>
+									
+										<div class="radio-switch radio-switch--secondary">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="" >Status</label>
+									
+										<div class="radio-switch">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="row">
+							<h3 class="footable-title col-sm-12">Withdrawal Limits</h3>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="tr-active">
+					<td>123456</td>
+					<td>Some Name</td>
+					<td><span class="country"><img src="img/ru.svg" alt="RU" width="24" height="24" />RU</span></td>
+					<td>email@gmail.com</td>
+					<td><span class="badge badge-secondary">eneble</span></td>
+					<td><span class="badge badge-primary">eneble</span></td>
+					<td class="text-right"><button class="btn btn--primary" type="button"><i class="far fa-save icon--left"></i>save</button></td>
+					<td colspan="2">
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Name</label>
+										<input type="text" class="form-control" id="InputName" placeholder="Your Name" aria-describedby="NameHelp">
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="InputName">Password</label>
+										<input type="pass" class="form-control" id="InputName" placeholder="*****" aria-describedby="NameHelp">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="InputEmail">Email</label>               
+										<input type="email" class="form-control" id="InputEmail" placeholder="Enter Email" aria-describedby="emailHelp" required>
+									</div>
+									
+									<div class="col-sm-12 form-group ">
+										<label for="InputCountry">Country</label>
+										<select class="form-control selectpicker" id="InputCountry" required>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Ukraine</span>" value="Ukraine">Ukraine</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Russia</span>" value="Russia">Russia</option>
+											<option data-content="<img class='form-control__flag' src='https://goo.gl/UQ8wyd'>Poland</span>" value="Poland">Poland</option>
+										</select>
+									</div>
+									
+									
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="row">
+									<div class="col-sm-12 form-group">
+										<label for="" >F2A</label>
+									
+										<div class="radio-switch radio-switch--secondary">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="f2a"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 form-group">
+										<label for="" >Status</label>
+									
+										<div class="radio-switch">
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioMale" value="RadioMale" checked>
+												<label for="RadioMale" class="radio-switch__label">Eneble</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input type="radio" name="status"  id="RadioFemale" value="RadioFemale">
+												<label for="RadioFemale" class=" radio-switch__label">Disable</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="row">
+							<h3 class="footable-title col-sm-12">Withdrawal Limits</h3>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col col-sm-5 form-group lot-block">
+										<div class="lot-block__logo"><img src="img/blt-logo.png" alt="" /></div>
+										<div class="lot-block__content">
+											<p class="lot-block__abbr">blt</p>
+											<p class="lot-block__title">Bloom</p>
+										</div>
+									</div>
+
+									<div class="col col-sm-7 form-group">
+										<div class="spinner" id="spinner">
+											<button type="button" class="btn ammount-arrow ammount-arrow--decrease spinner-btns spinner-btns--left" data-action="decrement">
+												<i class="far fa-caret-left"></i>
+											</button>                
+											<input name="qty" type="text" class="form-control text-center" value="22" min="1" max="100">
+											<button type="button" class="btn ammount-arrow ammount-arrow--increase spinner-btns spinner-btns--right" data-action="increment">
+												<i class="far fa-caret-right"></i>
+											</button> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="text-center admin-page__footer">
+			<button class="btn btn-primary btn--big" type="button"><i class="fas fa-sync-alt icon--left"></i>load more</button>
+		</div>
+	</div>
+
+
+
+ 
+	<!-- shit –– start -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="style/footable.standalone.css" />
+		
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+		<script src="js/footable.js"></script>
+		<script src="js/bootstrap-input-spinner.js"></script>
+		<script src="js/my.js"></script>
+		<!-- shit –– end -->
+	</body>
+</html>

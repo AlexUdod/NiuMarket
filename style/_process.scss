@@ -1,0 +1,82 @@
+// .spinner {
+// 	@extend .form-control;
+// 	display: flex;
+// }
+
+// .spinner__input {
+// 	border: none;
+// 	background-color: transparent;
+// 	text-align: center;
+// }
+
+.spinner {
+	position: relative;
+}
+
+.spinner-btns {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+.spinner-btns--left {
+	left: 0;
+}
+
+.spinner-btns--right {
+	right: 0;
+}
+
+.currency-changes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.currency-changes__description {
+	color: #a4a3aa;
+}
+
+.currency-changes__personal-ammount {
+	color: $indigo;
+}
+
+.input-group--proccess {
+	position: relative;
+}
+
+.ammount-btn,
+.ammount-arrow {
+	// position: absolute;
+	// z-index: 10;
+	// top: 0.3rem;
+	padding: 0.5rem 1rem;
+}
+
+.ammount-btn {
+	width: auto;
+	color: $base-color;
+	font-weight: 500;	
+}
+
+// .ammount-btn--decrease {
+// 	left: 0.3rem;
+// }
+
+// .ammount-btn--increase {
+// 	right: 0.3rem;
+// }
+
+.ammount-arrow {
+	background: transparent;
+	color: $indigo;
+	display: inline-flex;
+    height: 100%;
+    font-size: 1.25rem;
+}
+
+// .ammount-arrow--decrease {
+// 	left: 5rem;
+// }
+
+// .ammount-arrow--increase {
+// 	right: 5rem;
+// }

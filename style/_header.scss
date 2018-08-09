@@ -1,0 +1,301 @@
+
+.header-page{
+	font-weight: 500;
+}
+
+.site-header {
+	display: flex;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+	background-color: $white;
+	position: relative;
+	justify-content: space-between;
+}
+
+.site-header::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left,#6824cd,#6861f9);
+	position: absolute;
+	top: 0;	
+}
+
+.admin-page__header-logo {
+	width: 70%;
+	margin: 0;
+	padding: 1.25rem 1.5rem .75rem;
+	font-family: 'Nunito','Arial', sans-serif;
+	font-size: 1.56rem;
+	font-weight: 600;
+	color: $base-color;
+	border-right: 1px solid #f4f4f5;
+}
+
+.admin-page__header-logo::before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "";
+	width: 2.5rem;
+	height: 2rem;
+	margin-right: 1rem;
+	background-image: url(../img/niumarket-logo-admin.svg);
+	background-repeat: no-repeat;
+}
+
+.admin-page__header-logo span{
+	font-weight: 300;
+}
+
+.toogler-btn {
+	border: none;
+	background-color: $base-grey;
+	padding: 0 1.5rem;
+	margin: 0;
+	cursor: pointer;
+	width: 30%;
+}
+
+.site-backdrop--wrapper {
+	display: none;
+}
+
+.site-backdrop {
+	display: block;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to left,#6824cd,#6861f9);
+	transition: opacity 0.3s ease;
+}
+
+.toogler-btn--active,
+.mobilemenu-header__close-btn--active {
+	margin-right: 1.5rem;
+	color: $primary;
+}
+
+.header-nav--wrapper {
+	position: absolute;
+	width: 95%;
+	display: none;
+	z-index: 3;
+	margin-top: 3px;
+	height: 100vh;
+	background-color: #f9fafc;	
+}
+
+
+.header-nav {
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 2rem 1.4rem;	
+	justify-content: space-between;
+	box-shadow:inset 0 3px 10px rgba(0, 0, 0, 0.08);	
+}
+
+.nav-list {
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+}
+
+.nav-link {
+	color: #37354a;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.8rem;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	background-color: $white;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+	color: #37354a;
+}
+
+.nav-item--active {
+	background-color: $white;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+	color: #37354a;
+}
+
+.username-dropdown__container {
+	display: flex;
+	border: 1px solid #f4f4f5;
+	background-color: inherit;
+	padding: 0 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.nav__choose-username-btn {
+	border: none;
+	cursor: pointer;
+	background-color: inherit;
+	border-radius: 4px;
+	padding: 1rem 0;
+	width: 100%;
+	text-align: left;
+	font-weight: 500;
+}
+
+.nav__username-admin {
+	color: $white;
+	background-color: $green;
+	align-self: center;
+	margin-left: 0.8rem;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.4rem;
+}
+
+.choose-username-btn--active {
+	margin-left: 0.5rem;		
+}
+
+.mobilemenu-header--wrapper {
+	display: none;
+	width: 100%;	
+}
+
+.mobilemenu-header {
+	display: flex;
+}
+
+.mobilemenu-header__caption {
+	padding: 1.25rem 1.5rem .75rem;
+	background-color: $white;
+	width: 70%;
+	margin: 0;
+	border-right: 1px solid #f4f4f5;
+	font-family: 'Nunito','Arial', sans-serif;
+	font-size: 1.56rem;
+	font-weight: 600;
+}
+
+.mobilemenu-header__close-btn {
+	border: none;
+	flex-grow: 1;
+	border: none;
+	background-color: $base-grey;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+
+.username-list {
+	padding: 2rem 1.4rem;
+	background-color: #f9fafc;
+}
+
+.username-item {
+	padding: 0.8rem 1.4rem;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	width: auto;
+}
+
+.username-item:hover,
+.username-item:focus,
+.username-item:active {
+	background-color: $white;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+	color: #37354a;
+}
+
+.nav-item--icons {
+	color: #5ae484;
+}
+
+
+@media(min-width: $l-viewport){
+
+	.site-header {
+		justify-content: flex-start;
+	}
+
+	.admin-page__header-logo {
+		width: auto;
+	}
+
+	.header-nav--wrapper {
+		position: static;
+		width: auto;	
+		flex-grow: 1;
+		display: block;
+		height: auto;
+	}
+
+	.header-nav {
+		flex-direction: row;
+		width: auto;
+		padding: 0;
+		box-shadow: none;		
+		background-color: rgb(255, 255, 255);
+		background-image: linear-gradient(rgb(253,253,254) 0%, rgb(250,251,253) 100%);
+	}
+
+	.toogler-btn {
+		display: none;
+	}
+
+	.nav-list {
+		flex-direction: row;
+		padding-left: 1.3rem ;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		width: auto;
+	}
+
+	.nav-link {
+		padding: 0.8rem 1.4rem;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		width: auto;
+		flex-direction: row;
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+		border: 1px solid #ebebef;
+		background-color: inherit;
+		box-shadow: none;
+	}
+
+	.nav-item--active {
+		border: 1px solid #ebebef;
+		background-color: inherit;
+		box-shadow: none;
+		outline: none;		
+	}
+
+	.nav-item--icons {
+		margin-right: 0.8rem;
+	}
+
+	.username-dropdown__container {
+		background-color: $white;
+		border: none;	
+		border-left: 1px solid #f4f4f5;
+		margin-bottom: 0;		
+	}
+
+	.nav__choose-username-btn {
+		border-radius: 0;	
+		width: auto;
+	}
+
+
+}
+
+

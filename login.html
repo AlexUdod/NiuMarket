@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600|Roboto:400,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/main.css">
+		<title>Login to Account</title>
+	</head>
+	<body class="user-data-page">	
+	<div class="user-data-page__wrap">	
+		<div class="user-data-page__section">
+			<div class="user-data-page__header">
+					<h1 class="user-data-page__logo col-md-6"><span>Niu</span> Market</h1>   
+					<h2 class="user-data-page__caption col-md-6">Login to Account</h2>
+			</div>
+		</div>
+		<form class="user-data-page__section block-card block-card--before-caption" action="">
+			<div class="block-card--spacer">
+			<div class="row">
+				<div class="col-md-6 form-group">             
+					<label class="" for="InputEmail">Email
+						<span class="label__star">*</span>
+					</label>                             
+					<input type="email" class="form-control" id="InputEmail" placeholder="Enter Email" aria-describedby="emailHelp" required>
+				</div>
+
+				<div class="col-md-6 form-group">             
+					<label class="" for="InputPassword">Password
+						<span class="label__star">*</span>
+					</label>                             
+					<input type="password" class="form-control" id="InputPassword" placeholder="******" aria-describedby="PasswordHelp" required>
+				</div>
+			</div>
+			<div class="row row--bottom">	
+				<div class="col-md-6 form-group">
+					<label for="InputMobile" >Verify via SMS
+						<span class="label__star">*</span>
+					</label>
+
+					<div class="registration__mobile-container--flex">  
+						<select class="form-control selectpicker regisreation__mobile-code">
+							<option value="+380">+380</option>
+							<option value="+480">+480</option>
+							<option value="+580">+580</option>
+						</select>             
+						<input type="tel" class="form-control" id="InputMobile" placeholder="XXX XXX XX" required>
+					</div>
+				</div>
+
+				<div class="col-md-6 form-group">                       
+					<button class="btn btn-secondary icon--left far fa-envelope">Get SMS</button>
+				</div>
+
+				<div class="col-12">
+					<div class="alert alert-primary" role="alert">
+						<i class="icon fas fa-info-circle"></i>
+						 A text message has been sent to your phone with a verifying code.
+					</div>
+				</div>
+			</div>
+		</div>
+				
+				<div class="block-card__footer">
+					<button class=" btn btn-primary block-card__footer-btn">Login
+						<i class="far fa-arrow-alt-circle-right icon--right"></i>
+				</button>
+				</div>
+		</form>
+	
+		
+		
+		<!-- shit –– start -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+
+		<script src="js/my.js"></script>
+		<!-- shit –– end -->
+	</body>
+</html>

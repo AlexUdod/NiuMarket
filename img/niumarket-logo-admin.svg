@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 42.02 31.24" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="a" x1=".18" x2="39.25" y1="16.48" y2="16.48" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5ae484" offset="0"/>
+<stop stop-color="#4cdebe" offset="1"/>
+</linearGradient>
+</defs>
+<title>niumarket-logo-admin</title>
+<path transform="translate(-.18 -.22)" d="M1.48,8.34H9.15S18,6.56,18,16s8.86,8.65,8.86,8.65H37.95" fill="none" opacity=".2" stroke="#4e32df" stroke-dasharray="3,7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px"/>
+<polyline points="34.94 18.63 40.26 24.43 34.94 30.24" fill="none" opacity=".2" stroke="#4e32df" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px"/>
+<path transform="translate(-.18 -.22)" d="M1.48,25.64H9.15S18,25.43,18,16s8.86-8.65,8.86-8.65H37.95" fill="none" stroke="url(#a)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.6px"/>
+<polyline points="34.94 1.3 40.26 7.11 34.94 12.91" fill="none" stroke="#4cdebe" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.6px"/>
+</svg>

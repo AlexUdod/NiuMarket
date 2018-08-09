@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600|Roboto:400,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="style/main.css">
+		<title>Deposit DTN</title>
+	</head>
+	<body class="admin-page">
+
+	<div class="block-card--spacer-top container">
+		<header class="page-header justify-content-start" style="flex-direction: row" >
+			<a class="align-self-start back-link" href=""><i class="btn btn--square icon icon--back"></i><span>Back</span></a>
+			<h1 class="page-header__title">Deposit DTN</h1>
+		</header>
+	</div>
+	<div class="user-data-page__section block-card">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-7 block-card--spacer-vert ">
+					<div class="form-group">
+						<label for="deposit-address">Deposit Address</label>
+						<div class="btn-under-input" >
+							<button class="icon icon--copy btn btn--square btn-under-input__btn" type="button"></button>
+							<input type="text" id="deposit-address" class="form-control letter-spacing-half" placeholder="0xXXXXXXXXXXXX">
+						</div>
+					</div>
+					<div class="alert alert-primary" role="alert">
+						<i class="icon fas fa-info-circle"></i>
+							– Send only ETH to this address<br> – Never type the address, alway
+					</div>					
+				</div>
+				
+				<div class="col-sm-12 col-md-2 in-center in-center--separator">
+					<span class="badge--circle">or</span>
+				</div>
+				<div class="col-sm-12  col-md-3 in-center block-card--spacer-vert ">
+					<div class="qr-code-block"><img src="img/qr.png" alt="" /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="block-card--spacer-vert container">
+		<header class="page-header justify-content-center">
+			<h2 class="page-header__title">History</h2>
+		</header>
+		<table class="table-js">
+			<thead>
+				<tr>
+					<th class="order-desc">Date</th>
+					<th>Type</th>
+					<th data-breakpoints="xs sm">Currency</th>
+					<th data-breakpoints="xs sm">Amount in USD</th>
+					<th data-breakpoints="xs sm">Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tr-active">
+					<td>01 / 01 / 2018  9:00 am</td>
+					<td>Deposit</td>
+					<td>USD</td>
+					<td>22, 080.50</td>
+					<td><span class="badge badge-primary">Сompleted</span></td>
+				</tr>
+				<tr class="tr-active">
+					<td>01 / 01 / 2018  9:00 am</td>
+					<td>Withdraw</td>
+					<td>USD</td>
+					<td>22, 080.50</td>
+					<td><span class="badge badge-info">Pending</span></td>
+				</tr>
+				<tr class="tr-active">
+					<td>01 / 01 / 2018  9:00 am</td>
+					<td>Some Name</td>
+					<td>USD</td>
+					<td>22, 080.50</td>
+					<td><span class="badge badge-secondary">eneble</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="text-center admin-page__footer">
+			<button class="btn btn-primary btn--big" type="button"><i class="fas fa-sync-alt icon--left"></i>load more</button>
+		</div>
+	</div>
+
+
+
+ 
+	<!-- shit –– start -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="style/footable.standalone.css" />
+		
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+		<script src="js/footable.js"></script>
+		<script src="js/bootstrap-input-spinner.js"></script>
+		<script src="js/my.js"></script>
+		<!-- shit –– end -->
+	</body>
+</html>
